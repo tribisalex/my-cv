@@ -1,0 +1,136 @@
+{
+  "general": {
+    "name": "Tribis Alexandr Vladimirovich",
+    "dateOfBirth": "18 October 1987 (38 years)",
+    "license": "Category B Driving Licence",
+    "citizenship": "Belarusian",
+    "workPermit": "Russia, Belarus",
+    "companyKol": "Orsha College of Vitebsk State University named after P.M. Masherov",
+    "experienceTitle": "Work Experience - 17 years and 9 months",
+    "more": "More",
+    "collapse": "Collapse",
+    "technologies": "Technologies used:",
+    "achievements": "Key achievements:",
+    "companyClev": "Clevertec",
+    "exportTo": "Export to PDF",
+    "educationTitle": "Education and courses",
+    "skillsTitle": "Skills",
+    "languageTitle": "Knowledge of languages",
+    "contactsTitle": "Additional Information",
+    "contact": "Contacts",
+    "phone": "Phone",
+    "recommendations": "Recommendations",
+    "driving": "Driving",
+    "hasAuto": "Has a personal car"
+  },
+  "header": {
+    "position": "Frontend Developer",
+    "location": "Minsk",
+    "relocation": "Not ready to relocate",
+    "businessTrips": "Ready for business trips",
+    "employment": "Full-time",
+    "workSchedule": "Full day, remote work",
+    "commuteTime": "Doesn't matter",
+    "salary": "1 700 € net"
+  },
+  "about": {
+    "text": "Goal-oriented Frontend Developer with commercial experience in React and TypeScript development. Have a strong technical background confirmed by completed courses from The Rolling Scopes School. Possess more than 6 years of experience in teaching IT disciplines, which developed mentoring skills, explaining complex concepts and teamwork. Looking for an interesting project with modern technology stack where I can contribute and grow professionally."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "totalDuration": "17 years 9 months",
+    "clevertec": {
+      "position": "Frontend Developer",
+      "period": "November 2022 — Present",
+      "duration": "3 years 1 month",
+      "description": [
+        "Development and maintenance of web application user interfaces",
+        "SPA development using React.js and TypeScript",
+        "Participation in application architecture design and new functionality implementation",
+        "Working with Redux state manager for application state management",
+        "Backend interaction via REST API, working with asynchronous requests",
+        "Adaptive and cross-browser component layout",
+        "Performance optimization and code refactoring",
+        "Using Git for version control",
+        "Development and maintenance of web application client side"
+      ],
+      "achievements": []
+    },
+    "teacher": {
+      "position": "Special Disciplines Teacher in Software Engineering",
+      "period": "August 2016 — November 2022",
+      "duration": "6 years 4 months",
+      "description": [
+        "Conducting training sessions on professional components of the 'Software Engineering' specialty"
+      ],
+      "achievements": [
+        "Prepared a student who won 3rd place in the national WorldSkills Belarus 2020 competition in 'Web Design and Development'"
+      ]
+    }
+  },
+  "education": {
+    "title": "Education and Courses",
+    "courses": {
+      "rss": {
+        "name": "Frontend",
+        "degree": "JAVASCRIPT/FRONT-END 2022Q3 (JAVASCRIPT)"
+      },
+      "rssPreschool": {
+        "name": "Frontend",
+        "degree": "JS/FE PRE-SCHOOL 2022Q2 (JAVASCRIPT)"
+      },
+      "itransition": {
+        "name": "Frontend Development",
+        "degree": "Master"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "frontend": "Frontend Technologies",
+      "tools": "Tools & Other"
+    },
+    "items": {
+      "frontend": [
+        "React JS",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "TypeScript",
+        "React",
+        "ReactJS",
+        "Redux",
+        "AJAX",
+        "JSON"
+      ],
+      "tools": ["Git", "Node.js", "Adaptive layout", "BEM", "CorelDRAW"]
+    }
+  },
+  "languages": {
+    "belarusian": {
+      "name": "Belarusian",
+      "level": "Native"
+    },
+    "english": {
+      "name": "English",
+      "level": "A1 — Beginner"
+    }
+  },
+  "recommendations": {
+    "clevertec": {
+      "contact": "Alexey",
+      "position": "Frontend Developer"
+    },
+    "school": {
+      "company": "Secondary School №7 of Orsha",
+      "contact": "Irina Anatolievna Osipova",
+      "position": "Director of Secondary School №7 of Orsha"
+    }
+  },
+  "buttons": {
+    "exportPdf": "Export PDF",
+    "switchTheme": "Switch theme",
+    "switchLanguage": "RU"
+  }
+}
