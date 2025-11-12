@@ -21,7 +21,8 @@
     "phone": "Телефон",
     "recommendations": "Рекомендации",
     "driving": "Вождение",
-    "hasAuto": "Имеется собственный автомобиль"
+    "hasAuto": "Имеется собственный автомобиль",
+    "responsibilities": "Обязанности и достижения"
   },
   "header": {
     "position": "Frontend-разработчик",
@@ -43,18 +44,50 @@
       "position": "Frontend-разработчик",
       "period": "Ноябрь 2022 — настоящее время",
       "duration": "3 года 1 месяц",
-      "description": [
-        "Разработка и поддержка пользовательских интерфейсов веб-приложений",
-        "Разработка SPA на React.js с использованием TypeScript",
-        "Участие в проектировании архитектуры приложения и реализации нового функционала",
-        "Работа со state-менеджером Redux для управления состоянием приложения",
-        "Взаимодействие с бэкендом через REST API, работа с асинхронными запросами",
-        "Адаптивная и кроссбраузерная верстка компонентов",
-        "Оптимизация производительности и рефакторинг кода",
-        "Использование Git для контроля версий",
-        "Разработка и поддержка клиентской части веб-приложения"
-      ],
-      "achievements": []
+      "projects": {
+        "slana": {
+          "name": "Slana - FinTech платформа для Monetech",
+          "description": "Разработка фронтенд-части платформы для автоматизации финансовых операций и управления платежами",
+          "responsibilities": [
+            "Разработка пользовательских интерфейсов для управления финансовыми операциями",
+            "Реализация модуля мониторинга транзакций в реальном времени",
+            "Создание компонентов для аналитики и отчетности",
+            "Интеграция с бэкенд-API для обработки финансовых данных",
+            "Оптимизация производительности интерфейсов для работы с большими объемами данных",
+            "Реализация сложных форм валидации финансовых операций",
+            "Разработка системы уведомлений и алертов"
+          ],
+          "technologies": [
+            "React 18",
+            "TypeScript 5.0",
+            "Redux Toolkit",
+            "React Router DOM",
+            "Ant Design Mobile",
+            "Firebase",
+            "Sentry",
+            "i18next",
+            "WebSocket",
+            "Chart.js / React PDF",
+            "Jest / Cypress",
+            "CSS Modules",
+            "Craco",
+            "FingerprintJS Pro",
+            "Jumio WebSDK",
+            "Google Tag Manager",
+            "Microsoft Clarity"
+          ]
+        },
+        "internal": {
+          "name": "Внутренние проекты Clevertec",
+          "description": "Разработка и поддержка корпоративных систем и инструментов",
+          "responsibilities": [
+            "Разработка UI-компонентов для внутренней библиотеки компонентов",
+            "Рефакторинг legacy-кода и миграция на современный стек",
+            "Участие в code review и менторство junior-разработчиков",
+            "Оптимизация процессов разработки и CI/CD"
+          ]
+        }
+      }
     },
     "teacher": {
       "position": "Преподаватель спецдисциплин специальности ПОИТ",
@@ -99,9 +132,27 @@
         "CSS3",
         "TypeScript",
         "React",
+        "ReactJS",
         "Redux",
         "AJAX",
-        "JSON"
+        "JSON",
+        "Redux Toolkit",
+        "React Router DOM",
+        "Ant Design Mobile",
+        "Ant Design",
+        "Firebase",
+        "Sentry",
+        "i18next",
+        "WebSocket",
+        "Chart.js / React PDF",
+        "Jest / Cypress",
+        "CSS Modules",
+        "Craco",
+        "FingerprintJS Pro",
+        "Jumio WebSDK",
+        "Google Tag Manager",
+        "Microsoft Clarity",
+        "Next.js"
       ],
       "tools": ["Git", "Node.js", "Адаптивная верстка", "BEM", "CorelDRAW"]
     }
@@ -117,14 +168,13 @@
     }
   },
   "recommendations": {
-    "clevertec": {
+    "clevertecFront": {
       "contact": "Алексей",
       "position": "Frontend-разработчик"
     },
-    "school": {
-      "company": "ГУО \"СШ №7 г.Орши\"",
-      "contact": "Осипова Ирина Анатольевна",
-      "position": "Директор ГУО \"СШ №7 г.Орши\""
+    "clevertecBack": {
+      "contact": "Алексей",
+      "position": "Backend-разработчик"
     }
   },
   "buttons": {

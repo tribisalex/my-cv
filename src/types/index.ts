@@ -19,18 +19,6 @@ export type Contact = {
   github: string;
 };
 
-export type Experience = {
-  id: string;
-  company: string;
-  position: string;
-  period: string;
-  duration: string;
-  description: string[];
-  technologies?: string[];
-  website?: string;
-  achievements?: string[];
-};
-
 export type Education = {
   id: string;
   year: string;
@@ -53,4 +41,25 @@ export type Recommendation = {
   company: string;
   contact: string;
   position: string;
+};
+
+export type Project = {
+  name: string;
+  description: string;
+  responsibilities: string[];
+  technologies: string[];
+};
+
+export type Experience = {
+  id: string;
+  company: string;
+  position: string;
+  period: string;
+  duration: string;
+  projects?: {
+    [key: string]: Project;
+  };
+  description?: string[];
+  website?: string;
+  achievements?: string[];
 };

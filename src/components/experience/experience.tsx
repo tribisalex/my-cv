@@ -7,6 +7,7 @@ export const Experience = () => {
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const { t } = useTranslation();
   const experiences = getExperiences(t);
+
   const toggleExpand = (id: string) => {
     setExpandedId(expandedId === id ? null : id);
   };
@@ -49,38 +50,68 @@ export const Experience = () => {
               </button>
 
               {isExpanded && (
-                <>
-                  <ul className={styles.description}>
-                    {exp.description.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
-                  </ul>
-                  {exp.technologies && (
-                    <div className={styles.technologies}>
-                      <strong>{t("general.technologies")}</strong>
-                      <div className={styles.technologyTags}>
-                        {exp.technologies.map((tech, idx) => (
-                          <span key={idx} className={styles.technologyTag}>
-                            {tech}
-                          </span>
-                        ))}
+                <div className={styles.expandedContent}>
+                  {exp.projects &&
+                    Object.values(exp.projects).map((project, projectIndex) => (
+                      <div key={projectIndex} className={styles.project}>
+                        <h4 className={styles.projectName}>{project.name}</h4>
+                        <p className={styles.projectDescription}>
+                          {project.description}
+                        </p>
+
+                        <div className={styles.projectDetails}>
+                          <div className={styles.responsibilities}>
+                            <h5>{t("general.responsibilities")}</h5>
+                            <ul>
+                              {project.responsibilities.map(
+                                (responsibility, idx) => (
+                                  <li key={idx}>{responsibility}</li>
+                                )
+                              )}
+                            </ul>
+                          </div>
+
+                          {project.technologies &&
+                            project.technologies.length > 0 && (
+                              <div className={styles.technologies}>
+                                <h5>{t("general.technologies")}</h5>
+                                <div className={styles.technologyTags}>
+                                  {project.technologies.map((tech, idx) => (
+                                    <span
+                                      key={idx}
+                                      className={styles.technologyTag}
+                                    >
+                                      {tech}
+                                    </span>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                        </div>
                       </div>
-                    </div>
+                    ))}
+                  {!exp.projects && exp.description && (
+                    <ul className={styles.description}>
+                      {exp.description.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
                   )}
 
-                  {exp.achievements && (
-                    <div className={styles.achievements}>
-                      <div className={styles.achievementsTitle}>
-                        🏆 {t("general.achievements")}
+                  {Array.isArray(exp.achievements) &&
+                    exp.achievements.length > 0 && (
+                      <div className={styles.achievements}>
+                        <div className={styles.achievementsTitle}>
+                          🏆 {t("general.achievements")}
+                        </div>
+                        <ul className={styles.achievementsList}>
+                          {exp.achievements.map((achievement, idx) => (
+                            <li key={idx}>{achievement}</li>
+                          ))}
+                        </ul>
                       </div>
-                      <ul className={styles.achievementsList}>
-                        {exp.achievements.map((achievement, idx) => (
-                          <li key={idx}>{achievement}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </>
+                    )}
+                </div>
               )}
             </div>
           );

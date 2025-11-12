@@ -14,9 +14,12 @@ export const Layout: React.FC<LayoutProps> = ({ children, onExportPdf }) => {
   const { i18n, t } = useTranslation();
   const [lang, setLang] = useState<string>("ru");
 
-  const changeLanguage = (lng: string) => {
-    setLang(lng === "ru" ? "en" : "ru");
-    i18n.changeLanguage(lang);
+  const changeLanguage = () => {
+    setLang((prevLang) => {
+      const newLang = prevLang === "ru" ? "en" : "ru";
+      i18n.changeLanguage(newLang);
+      return newLang;
+    });
   };
 
   return (
@@ -25,7 +28,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, onExportPdf }) => {
         <div className={styles.layoutControls}>
           <button
             className={classNames(styles.controlBtn, styles.themeToggle)}
-            onClick={() => changeLanguage(lang)}
+            onClick={() => changeLanguage()}
           >
             {lang}
           </button>

@@ -178,6 +178,79 @@
   background: var(--accent-hover);
 }
 
+.expandedContent {
+  margin-top: 1rem;
+}
+
+.project {
+  background: var(--bg-tertiary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+}
+
+.projectName {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.projectDescription {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.projectDetails {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.responsibilities h5,
+.technologies h5 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.responsibilities ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibilities li {
+  padding: 0.2rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.responsibilities li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.technologyTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.technologyTag {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
   .experience {
     padding: 1.5rem;
@@ -194,5 +267,14 @@
 
   .companyName {
     font-size: 1.2rem;
+  }
+
+  .projectDetails {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project {
+    padding: 1rem;
   }
 }

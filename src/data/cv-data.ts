@@ -43,10 +43,34 @@ export const getExperiences = (t: any): Experience[] => [
     position: t("experience.clevertec.position"),
     period: t("experience.clevertec.period"),
     duration: t("experience.clevertec.duration"),
-    description: t("experience.clevertec.description", { returnObjects: true }),
-    achievements: t("experience.clevertec.achievements", {
-      returnObjects: true,
-    }),
+    // description: t("experience.clevertec.description", { returnObjects: true }),
+    projects: {
+      slana: {
+        name: t("experience.clevertec.projects.slana.name"),
+        description: t("experience.clevertec.projects.slana.description"),
+        responsibilities: t(
+          "experience.clevertec.projects.slana.responsibilities",
+          { returnObjects: true }
+        ),
+        technologies: t("experience.clevertec.projects.slana.technologies", {
+          returnObjects: true,
+        }),
+      },
+      internal: {
+        name: t("experience.clevertec.projects.internal.name"),
+        description: t("experience.clevertec.projects.internal.description"),
+        responsibilities: t(
+          "experience.clevertec.projects.internal.responsibilities",
+          { returnObjects: true }
+        ),
+        technologies: [],
+      },
+    },
+    achievements: Array.isArray(
+      t("experience.clevertec.achievements", { returnObjects: true })
+    )
+      ? t("experience.clevertec.achievements", { returnObjects: true })
+      : [],
     website: "https://clevertech.by/",
   },
   {
@@ -56,7 +80,11 @@ export const getExperiences = (t: any): Experience[] => [
     period: t("experience.teacher.period"),
     duration: t("experience.teacher.duration"),
     description: t("experience.teacher.description", { returnObjects: true }),
-    achievements: t("experience.teacher.achievements", { returnObjects: true }),
+    achievements: Array.isArray(
+      t("experience.teacher.achievements", { returnObjects: true })
+    )
+      ? t("experience.teacher.achievements", { returnObjects: true })
+      : [],
     website: "https://okvgu.vsu.by/",
   },
 ];
@@ -110,12 +138,12 @@ export const getLanguages = (t: any): Language[] => [
 export const getRecommendations = (t: any): Recommendation[] => [
   {
     company: "Clevertec",
-    contact: t("recommendations.clevertec.contact"),
-    position: t("recommendations.clevertec.position"),
+    contact: t("recommendations.clevertecFront.contact"),
+    position: t("recommendations.clevertecFront.position"),
   },
   {
-    company: t("recommendations.school.company"),
-    contact: t("recommendations.school.contact"),
-    position: t("recommendations.school.position"),
+    company: "Clevertec",
+    contact: t("recommendations.clevertecBack.contact"),
+    position: t("recommendations.clevertecBack.position"),
   },
 ];

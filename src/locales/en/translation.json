@@ -1,6 +1,6 @@
 {
   "general": {
-    "name": "Tribis Alexandr Vladimirovich",
+    "name": "Tribis Alexandr",
     "dateOfBirth": "18 October 1987 (38 years)",
     "license": "Category B Driving Licence",
     "citizenship": "Belarusian",
@@ -21,7 +21,8 @@
     "phone": "Phone",
     "recommendations": "Recommendations",
     "driving": "Driving",
-    "hasAuto": "Has a personal car"
+    "hasAuto": "Has a personal car",
+    "responsibilities": "Responsibilities and Achievements"
   },
   "header": {
     "position": "Frontend Developer",
@@ -43,18 +44,50 @@
       "position": "Frontend Developer",
       "period": "November 2022 — Present",
       "duration": "3 years 1 month",
-      "description": [
-        "Development and maintenance of web application user interfaces",
-        "SPA development using React.js and TypeScript",
-        "Participation in application architecture design and new functionality implementation",
-        "Working with Redux state manager for application state management",
-        "Backend interaction via REST API, working with asynchronous requests",
-        "Adaptive and cross-browser component layout",
-        "Performance optimization and code refactoring",
-        "Using Git for version control",
-        "Development and maintenance of web application client side"
-      ],
-      "achievements": []
+      "projects": {
+        "slana": {
+          "name": "Slana - FinTech Platform for Monetech",
+          "description": "Development of frontend part for financial operations automation and payment management platform",
+          "responsibilities": [
+            "Development of user interfaces for financial operations management",
+            "Implementation of real-time transaction monitoring module",
+            "Creation of analytics and reporting components",
+            "Integration with backend API for financial data processing",
+            "Performance optimization of interfaces for large data volumes",
+            "Implementation of complex financial operations validation forms",
+            "Development of notification and alert system"
+          ],
+          "technologies": [
+            "React 18",
+            "TypeScript 5.0",
+            "Redux Toolkit",
+            "React Router DOM",
+            "Ant Design Mobile",
+            "Firebase",
+            "Sentry",
+            "i18next",
+            "WebSocket",
+            "Chart.js / React PDF",
+            "Jest / Cypress",
+            "CSS Modules",
+            "Craco",
+            "FingerprintJS Pro",
+            "Jumio WebSDK",
+            "Google Tag Manager",
+            "Microsoft Clarity"
+          ]
+        },
+        "internal": {
+          "name": "Internal Clevertec Projects",
+          "description": "Development and maintenance of corporate systems and tools",
+          "responsibilities": [
+            "Development of UI components for internal component library",
+            "Refactoring legacy code and migration to modern stack",
+            "Participation in code review and mentoring junior developers",
+            "Optimization of development processes and CI/CD"
+          ]
+        }
+      }
     },
     "teacher": {
       "position": "Special Disciplines Teacher in Software Engineering",
@@ -102,7 +135,24 @@
         "ReactJS",
         "Redux",
         "AJAX",
-        "JSON"
+        "JSON",
+        "Redux Toolkit",
+        "React Router DOM",
+        "Ant Design Mobile",
+        "Ant Design",
+        "Firebase",
+        "Sentry",
+        "i18next",
+        "WebSocket",
+        "Chart.js / React PDF",
+        "Jest / Cypress",
+        "CSS Modules",
+        "Craco",
+        "FingerprintJS Pro",
+        "Jumio WebSDK",
+        "Google Tag Manager",
+        "Microsoft Clarity",
+        "Next.js"
       ],
       "tools": ["Git", "Node.js", "Adaptive layout", "BEM", "CorelDRAW"]
     }
@@ -118,14 +168,13 @@
     }
   },
   "recommendations": {
-    "clevertec": {
+    "clevertecFront": {
       "contact": "Alexey",
       "position": "Frontend Developer"
     },
-    "school": {
-      "company": "Secondary School №7 of Orsha",
-      "contact": "Irina Anatolievna Osipova",
-      "position": "Director of Secondary School №7 of Orsha"
+    "clevertecBack": {
+      "contact": "Alexey",
+      "position": "Backend Developer"
     }
   },
   "buttons": {
