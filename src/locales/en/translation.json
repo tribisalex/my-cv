@@ -46,7 +46,7 @@
       "duration": "3 years 1 month",
       "projects": {
         "slana": {
-          "name": "Slana - FinTech Platform for Monetech",
+          "name": "Slana - FinTech Platform for Monetech (Mexico) - international FinTech company",
           "description": "Development of frontend part for financial operations automation and payment management platform",
           "responsibilities": [
             "Development of user interfaces for financial operations management",
@@ -75,6 +75,43 @@
             "Jumio WebSDK",
             "Google Tag Manager",
             "Microsoft Clarity"
+          ]
+        },
+        "cryptopro": {
+          "name": "CryptoPRO - Electronic Signature Management Platform",
+          "description": "Development of frontend part for electronic signature management system and cryptographic operations",
+          "responsibilities": [
+            "Development of user interfaces for electronic signature and certificate management",
+            "Integration with OIDC client for secure authentication",
+            "Implementation of complex forms with validation using React Hook Form",
+            "Creation of components for cryptographic key management",
+            "Development of administrative interface using Ant Design",
+            "Setting up e2e testing with Cypress",
+            "Performance optimization and test coverage",
+            "Integration with backend services for cryptographic operations processing"
+          ],
+          "technologies": [
+            "React 18",
+            "TypeScript 5.2",
+            "Redux Toolkit",
+            "Ant Design 5",
+            "React Hook Form",
+            "OIDC Client",
+            "React Router DOM",
+            "Cypress",
+            "Jest",
+            "React Testing Library",
+            "Craco",
+            "ESLint + Prettier",
+            "Husky + lint-staged",
+            "Day.js",
+            "CSS Modules"
+          ],
+          "achievements": [
+            "Implemented secure authentication system with OIDC",
+            "Achieved high e2e test coverage",
+            "Optimized form handling performance",
+            "Integrated modern code style and linting tools"
           ]
         },
         "internal": {
@@ -152,7 +189,14 @@
         "Jumio WebSDK",
         "Google Tag Manager",
         "Microsoft Clarity",
-        "Next.js"
+        "Next.js",
+        "React Hook Form",
+        "OIDC Client",
+        "React Testing Library",
+        "ESLint + Prettier",
+        "Husky + lint-staged",
+        "Day.js",
+        "CSS Modules"
       ],
       "tools": ["Git", "Node.js", "Adaptive layout", "BEM", "CorelDRAW"]
     }

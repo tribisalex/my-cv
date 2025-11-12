@@ -1,12 +1,5 @@
 import { useRef, useCallback } from "react";
 
-declare global {
-  interface Window {
-    html2canvas: any;
-    jsPDF: any;
-  }
-}
-
 export const usePdfExport = () => {
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -19,19 +12,47 @@ export const usePdfExport = () => {
         import("jspdf"),
       ]);
 
-      const canvas = await html2canvas.default(contentRef.current, {
-        scale: 2,
-        useCORS: true,
-        logging: false,
-        backgroundColor: "#ffffff",
-      });
-
-      const imgData = canvas.toDataURL("image/png");
+      const element = contentRef.current;
       const pdf = new jsPDF.default("p", "mm", "a4");
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+      const pageWidth = pdf.internal.pageSize.getWidth();
+      const pageHeight = pdf.internal.pageSize.getHeight();
 
-      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+      const scale = 3;
+      const elementWidth = element.scrollWidth;
+      const elementHeight = element.scrollHeight;
+
+      const totalScaledHeight =
+        (elementHeight * pageWidth * scale) / elementWidth;
+
+      let position = 0;
+      let currentPage = 1;
+
+      while (position < totalScaledHeight) {
+        if (currentPage > 1) {
+          pdf.addPage();
+        }
+
+        const canvas = await html2canvas.default(element, {
+          scale: scale,
+          useCORS: true,
+          logging: false,
+          backgroundColor: "#ffffff",
+          y: (position * elementHeight) / totalScaledHeight,
+          height: (pageHeight * scale * elementHeight) / totalScaledHeight,
+          width: elementWidth,
+          scrollY: 0,
+          allowTaint: false,
+          imageTimeout: 15000,
+        });
+
+        const imgData = canvas.toDataURL("image/png", 1.0);
+
+        pdf.addImage(imgData, "PNG", 0, 0, pageWidth, pageHeight);
+
+        position += pageHeight * scale;
+        currentPage++;
+      }
+
       pdf.save("CV_Трибис_Александр.pdf");
     } catch (error) {
       console.error("Ошибка при экспорте в PDF:", error);

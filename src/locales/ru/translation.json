@@ -46,7 +46,7 @@
       "duration": "3 года 1 месяц",
       "projects": {
         "slana": {
-          "name": "Slana - FinTech платформа для Monetech",
+          "name": "Slana - FinTech платформа для Monetech (Мексика, международный FinTech)",
           "description": "Разработка фронтенд-части платформы для автоматизации финансовых операций и управления платежами",
           "responsibilities": [
             "Разработка пользовательских интерфейсов для управления финансовыми операциями",
@@ -75,6 +75,43 @@
             "Jumio WebSDK",
             "Google Tag Manager",
             "Microsoft Clarity"
+          ]
+        },
+        "cryptopro": {
+          "name": "КриптоПРО - платформа для работы с электронной подписью",
+          "description": "Разработка фронтенд-части системы управления электронной подписью и криптографическими операциями",
+          "responsibilities": [
+            "Разработка пользовательских интерфейсов для работы с электронной подписью и сертификатами",
+            "Интеграция с OIDC-клиентом для безопасной аутентификации",
+            "Реализация сложных форм с валидацией с использованием React Hook Form",
+            "Создание компонентов для управления криптографическими ключами",
+            "Разработка административного интерфейса с использованием Ant Design",
+            "Настройка e2e тестирования с помощью Cypress",
+            "Оптимизация производительности и покрытие тестами",
+            "Интеграция с бэкенд-сервисами для обработки криптографических операций"
+          ],
+          "technologies": [
+            "React 18",
+            "TypeScript 5.2",
+            "Redux Toolkit",
+            "Ant Design 5",
+            "React Hook Form",
+            "OIDC Client",
+            "React Router DOM",
+            "Cypress",
+            "Jest",
+            "React Testing Library",
+            "Craco",
+            "ESLint + Prettier",
+            "Husky + lint-staged",
+            "Day.js",
+            "CSS Modules"
+          ],
+          "achievements": [
+            "Реализована безопасная система аутентификации с OIDC",
+            "Достигнуто высокое покрытие кода e2e тестами",
+            "Оптимизирована производительность работы с формами",
+            "Внедрены современные инструменты код-стайла и линтинга"
           ]
         },
         "internal": {
@@ -152,7 +189,14 @@
         "Jumio WebSDK",
         "Google Tag Manager",
         "Microsoft Clarity",
-        "Next.js"
+        "Next.js",
+        "React Hook Form",
+        "OIDC Client",
+        "React Testing Library",
+        "ESLint + Prettier",
+        "Husky + lint-staged",
+        "Day.js",
+        "CSS Modules"
       ],
       "tools": ["Git", "Node.js", "Адаптивная верстка", "BEM", "CorelDRAW"]
     }

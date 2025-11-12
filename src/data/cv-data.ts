@@ -43,7 +43,6 @@ export const getExperiences = (t: any): Experience[] => [
     position: t("experience.clevertec.position"),
     period: t("experience.clevertec.period"),
     duration: t("experience.clevertec.duration"),
-    // description: t("experience.clevertec.description", { returnObjects: true }),
     projects: {
       slana: {
         name: t("experience.clevertec.projects.slana.name"),
@@ -55,6 +54,20 @@ export const getExperiences = (t: any): Experience[] => [
         technologies: t("experience.clevertec.projects.slana.technologies", {
           returnObjects: true,
         }),
+      },
+      cryptopro: {
+        name: t("experience.clevertec.projects.cryptopro.name"),
+        description: t("experience.clevertec.projects.cryptopro.description"),
+        responsibilities: t(
+          "experience.clevertec.projects.cryptopro.responsibilities",
+          { returnObjects: true }
+        ),
+        technologies: t(
+          "experience.clevertec.projects.cryptopro.technologies",
+          {
+            returnObjects: true,
+          }
+        ),
       },
       internal: {
         name: t("experience.clevertec.projects.internal.name"),
