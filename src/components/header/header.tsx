@@ -21,7 +21,7 @@ export const Header = () => {
       <div
         className={isMobile ? styles.headerDetailsColumn : styles.headerDetails}
       >
-        <div className={styles.salary}>{personalInfo.salary}</div>
+        {/* <div className={styles.salary}>{personalInfo.salary}</div> */}
         <div className={styles.workConditions}>
           <span className={`${styles.workTag} ${styles.workTagRemote}`}>
             {personalInfo.workSchedule}

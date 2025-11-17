@@ -40,14 +40,14 @@ export const Layout: React.FC<LayoutProps> = ({ children, onExportPdf }) => {
             {theme === "light" ? "🌙" : "☀️"}
           </button>
 
-          {onExportPdf && (
+          {/* {onExportPdf && (
             <button
               onClick={onExportPdf}
               className={classNames(styles.controlBtn, styles.pdfExport)}
             >
               📄 {t("general.exportTo")}
             </button>
-          )}
+          )} */}
         </div>
       </header>
 
